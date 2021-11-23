@@ -29,14 +29,17 @@ class Nav extends Component {
           <Menu.Menu position="right">
             <Menu.Item>
               <span>
+                 Hello, {users[authedUser].name}
+              </span>
+            </Menu.Item>
+            <Menu.Item>
+              <span>
                 <Image
-                  // src={users[authedUser].avatarURL}
-                  src= "/images/avatars/rabbit.png"
+                  src={users[authedUser].avatarURL}
                   avatar
                   spaced="right"
                   verticalAlign="bottom"
                 />
-                {users[authedUser].name}
               </span>
             </Menu.Item>
             <Menu.Item>
@@ -52,12 +55,12 @@ class Nav extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Segment>
-        <Segment as={Fragment} minWidth={375} maxWidth={650}>
+        {/* <Segment as={Fragment} minWidth={375} maxWidth={650}>
           ...
         </Segment>
         <Segment as={Fragment} maxWidth={374}>
           ...
-        </Segment>
+        </Segment> */}
       </Container>
     );
   }
