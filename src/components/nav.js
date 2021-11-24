@@ -1,11 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {
   Menu,
   Segment,
   Image,
-  Grid,
   Button,
   Container
 } from 'semantic-ui-react';
@@ -55,12 +54,6 @@ class Nav extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Segment>
-        {/* <Segment as={Fragment} minWidth={375} maxWidth={650}>
-          ...
-        </Segment>
-        <Segment as={Fragment} maxWidth={374}>
-          ...
-        </Segment> */}
       </Container>
     );
   }
